@@ -17,10 +17,10 @@ Based on these, the full electronics, firmware and mechanical parts were develop
 </div>
 
 ## Electronics and firmware
-The source files for the electronics of the readout itself and a easily modifiable user board can be found in the [fastic-readout-hw](git@github.com:WojtaCZ/fastic-readout-hw.git) and [fastic-userboard-hw](git@github.com:WojtaCZ/fastic-userboard-hw.git) repositories. A C/C++ firmware for the readout board is provided in the [fastic-readout-fw](git@github.com:WojtaCZ/fastic-readout-fw.git) repository.
+The source files for the electronics of the readout itself and a easily modifiable user board can be found in the [fastic-readout-hw](https://github.com/WojtaCZ/fastic-readout-hw.git) and [fastic-userboard-hw](https://github.com/WojtaCZ/fastic-userboard-hw.git) repositories. A C/C++ firmware for the readout board is provided in the [fastic-readout-fw](https://github.com/WojtaCZ/fastic-readout-fw.git) repository.
 
 ## Mechanical
-Mechanical files for the readout system enclosure are made available in the [fastic-readout-mech](git@github.com:WojtaCZ/fastic-readout-mech.git) repository. These files are created such that they can be manufactured on a regular 3D printer.
+Mechanical files for the readout system enclosure are made available in the [fastic-readout-mech](https://github.com/WojtaCZ/fastic-readout-mech.git) repository. These files are created such that they can be manufactured on a regular 3D printer.
 
 ## Documentation
-The in-depth documentation of the device concept, as well as user's manual for operating the device are present in the [fastic-readout-doc](git@github.com:WojtaCZ/fastic-readout-doc.git). 
+The in-depth documentation of the device concept, as well as user's manual for operating the device are present in the [fastic-readout-doc](https://github.com/WojtaCZ/fastic-readout-doc.git). 
