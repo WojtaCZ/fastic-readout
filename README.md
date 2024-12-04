@@ -13,7 +13,7 @@ The requirements were for it to be:
 Based on these, the full electronics, firmware and mechanical parts were developed and made available in this repository.
 
 <div align="center">
-  <img src="fastic-readout-mech/images/preview.png" width="100%" />
+  <img src="https://github.com/WojtaCZ/fastic-readout-mech/blob/main/images/preview.png?raw=true" width="100%" />
 </div>
 
 ## Electronics and firmware
