@@ -1,0 +1,15 @@
+[submodule "fastic-readout-doc"]
+	path = fastic-readout-doc
+	url = git@github.com:WojtaCZ/fastic-readout-doc.git
+[submodule "fastic-userboard-hw"]
+	path = fastic-userboard-hw
+	url = git@github.com:WojtaCZ/fastic-userboard-hw.git
+[submodule "fastic-readout-hw"]
+	path = fastic-readout-hw
+	url = git@github.com:WojtaCZ/fastic-readout-hw.git
+[submodule "fastic-readout-fw"]
+	path = fastic-readout-fw
+	url = git@github.com:WojtaCZ/fastic-readout-fw.git
+[submodule "fastic-readout-mech"]
+	path = fastic-readout-mech
+	url = git@github.com:WojtaCZ/fastic-readout-mech.git
