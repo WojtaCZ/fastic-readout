@@ -38,14 +38,26 @@ A readout system comprising **two** FastIC+ chips, thus **16 channels** has been
 A simple user board has been developed as well to be used standalone or as a template for a custom board. The template provided includes **16 generic SiPM footprints** arranged in a 4x4 grid. Each SiPM channel is biased from the readout HV supply and separately filtered to minimize the chance of cross triggering of the sensors. An EEPROM is implemented to allow for storage of configuration on the user board itself. The manufacturing files are available in the [fastic-userboard-hw](https://github.com/WojtaCZ/fastic-userboard-hw.git) repository.
 
 <div align="center">
-  <img src="https://github.com/WojtaCZ/fastic-userboard-hw/blob/main/outputs/images/3d-top.png" width="45%" />
-  <img width="8%"> </img>
-  <img src="https://github.com/WojtaCZ/fastic-userboard-hw/blob/main/outputs/images/3d-bottom.png" width="45%" /> 
+  <img src="https://github.com/WojtaCZ/fastic-userboard-hw/blob/main/outputs/images/3d-top.png" width="39%" />
+  <img width="20%"> </img>
+  <img src="https://github.com/WojtaCZ/fastic-userboard-hw/blob/main/outputs/images/3d-bottom.png" width="39%" /> 
 </div>
 
 
 ## Mechanical
 Mechanical files for the readout system enclosure are made available in the [fastic-readout-mech](https://github.com/WojtaCZ/fastic-readout-mech.git) repository. These files are created such that they can be manufactured on a regular 3D printer.
+
+<div align="center">
+  <img src="https://github.com/WojtaCZ/fastic-readout-mech/blob/main/images/top.png" width="45%" />
+  <img width="8%"> </img>
+  <img src="https://github.com/WojtaCZ/fastic-readout-mech/blob/main/images/bottom.png" width="45%" /> 
+</div>
+
+<div align="center">
+  <img src="https://github.com/WojtaCZ/fastic-readout-mech/blob/main/images/rear.png" width="45%" />
+  <img width="8%"> </img>
+  <img src="https://github.com/WojtaCZ/fastic-readout-mech/blob/main/images/front.png" width="45%" /> 
+</div>
 
 ## Documentation
 The in-depth documentation of the device concept and electronics, as well as user's manual for operating the device are present in the [fastic-readout-doc](https://github.com/WojtaCZ/fastic-readout-doc.git).
