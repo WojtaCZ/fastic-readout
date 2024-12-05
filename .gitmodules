@@ -1,15 +1,20 @@
 [submodule "fastic-readout-doc"]
 	path = fastic-readout-doc
 	url = git@github.com:WojtaCZ/fastic-readout-doc.git
+	branch = main
 [submodule "fastic-userboard-hw"]
 	path = fastic-userboard-hw
 	url = git@github.com:WojtaCZ/fastic-userboard-hw.git
+	branch = main
 [submodule "fastic-readout-hw"]
 	path = fastic-readout-hw
 	url = git@github.com:WojtaCZ/fastic-readout-hw.git
+	branch = V2.0
 [submodule "fastic-readout-fw"]
 	path = fastic-readout-fw
 	url = git@github.com:WojtaCZ/fastic-readout-fw.git
+	branch = master
 [submodule "fastic-readout-mech"]
 	path = fastic-readout-mech
 	url = git@github.com:WojtaCZ/fastic-readout-mech.git
+	branch = main
