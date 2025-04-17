@@ -39,74 +39,74 @@ The readout implements two interfaces for communication with the device.
 #### CDC interface
 The first one is a CDC interface, that emulates a COM port over USB. This interface implements a simple human-readable protocol that allows the user to control all the necessary functions of the device. The following commands are available, where square braces indicate a choice from one of the options, curly braces indicate an expected value and triagular braces indicate an optional flag.
 
-`get readout status`
-Returns the status of the readout system.
-`get readout uid`
-Returns the unique id of the readout system.
-`get readout firmware`
-Returns the information about the firmware of the readout.
-`get hv enable`
-Returns the state of the high-voltage power supply.
-`set hv enable [true/false]`
-Enables/disables the high-voltage power supply.
-`get hv current`
-Returns the current drawn from the high-voltage power supply.
-`get hv voltage`
-Returns the voltage setpoint of the high-voltage power supply.
-`get hv pid`
-Returns the high-voltage regulator P, I, D values.
-`set hv pid {float: P} {float: I} {float: D}`
-Sets the high-voltage regulator P, I, D values.
-`set hv voltage {float: voltage}`
-Sets the high-voltage power supply voltage setpoint. A float number is expected.
-`get fastic register [1/2] {hex byte: address}`
-Returns the value of the specified FastIC+ register
-`set fastic register [1/2] {hex byte: address} {hex byte: value} <f>`
-Sets the value of the specified FastIC+ register. The optional **f** suffix is required in some cases where register writes could affect the device functionality. The readout will inform the user about the need to use this suffix.
-`get fastic voltage [1/2]`
-Returns the VMON voltage of the selected FastIC+.
-`get fastic syncreset [1/2]`
-Returns the value of the selected FastIC+ SRST pin.
-`set fastic syncreset [1/2] [high/low]`
-Sets the FastIC+ SRST pin to the provided state
-`get fastic calpulse [1/2]`
-Returns the state of the injection pulse generator for the selected FastIC+.
-`set fastic calpulse [1/2] [enable/disable]`
-Enables/disables the calibration pulse generation for the selected FastIC+.
-`get fastic time [1/2]`
-Returns the state of the selected FastIC+ time pin.
-`get fastic aurora [1/2]`
-Returns the state of the Aurora stream for the selected FastIC+.
-`set fastic aurora [1/2] [enable/disable]`
-Enables/disables the Aurora stream for the selected FastIC+.
-`get userboard status`
-Returns the status of the userboard.
-`get userboard uid`
-Returns the ID of the userboard.
-`get userboard name`
-Returns the name for the userboard.
-`set userboard name {string: name}`
-Sets the userboard name to the specified vstring value. The maximum number of characters is 64.
-`get userboard writeprotect`
-Returns the state of the userboard write protect bit.
-`set userboard writeprotect [true/false]`
-Enables/disables the userboard write protect.
-`get userboard init`
-Checks if the userboard memory has been initialized.
-`set userboard init `
-Initializes the userboard memory when a non-initialized userboard is first connected to a readout.
-`get userboard voltage `
-Returns the high-voltage power supply voltage preset stored in the userboard.
-`set userboard voltage {float: voltage}`
-Sets the high-voltage power supply voltage preset stored in the userboard. A float number is expected.
-`get userboard register [1/2] {hex byte: address}`
-Returns the specified register preset of the selected FastIC+ from the userboard.
-`set userboard register [1/2] {hex byte: address} {hex byte: value}`
-Sets the specified register preset of the selected FastIC+ from the userboard.
-`set userboard tomemory`
-Copies the current FastIC+ configuration and high-voltage setpoint into the userboard memory.
-`set userboard frommemory`
-Loads the FastIC+ configuration and high-voltage setpoint from the userboard memory and applies it.
+`get readout status`\
+Returns the status of the readout system.\
+`get readout uid`\
+Returns the unique id of the readout system.\
+`get readout firmware`\
+Returns the information about the firmware of the readout.\
+`get hv enable`\
+Returns the state of the high-voltage power supply.\
+`set hv enable [true/false]`\
+Enables/disables the high-voltage power supply.\
+`get hv current`\
+Returns the current drawn from the high-voltage power supply.\
+`get hv voltage`\
+Returns the voltage setpoint of the high-voltage power supply.\
+`get hv pid`\
+Returns the high-voltage regulator P, I, D values.\
+`set hv pid {float: P} {float: I} {float: D}`\
+Sets the high-voltage regulator P, I, D values.\
+`set hv voltage {float: voltage}`\
+Sets the high-voltage power supply voltage setpoint. A float number is expected.\
+`get fastic register [1/2] {hex byte: address}`\
+Returns the value of the specified FastIC+ register\
+`set fastic register [1/2] {hex byte: address} {hex byte: value} <f>`\
+Sets the value of the specified FastIC+ register. The optional **f** suffix is required in some cases where register writes could affect the device functionality. The readout will inform the user about the need to use this suffix.\
+`get fastic voltage [1/2]`\
+Returns the VMON voltage of the selected FastIC+.\
+`get fastic syncreset [1/2]`\
+Returns the value of the selected FastIC+ SRST pin.\
+`set fastic syncreset [1/2] [high/low]`\
+Sets the FastIC+ SRST pin to the provided state\
+`get fastic calpulse [1/2]`\
+Returns the state of the injection pulse generator for the selected FastIC+.\
+`set fastic calpulse [1/2] [enable/disable]`\
+Enables/disables the calibration pulse generation for the selected FastIC+.\
+`get fastic time [1/2]`\
+Returns the state of the selected FastIC+ time pin.\
+`get fastic aurora [1/2]`\
+Returns the state of the Aurora stream for the selected FastIC+.\
+`set fastic aurora [1/2] [enable/disable]`\
+Enables/disables the Aurora stream for the selected FastIC+.\
+`get userboard status`\
+Returns the status of the userboard.\
+`get userboard uid`\
+Returns the ID of the userboard.\
+`get userboard name`\
+Returns the name for the userboard.\
+`set userboard name {string: name}`\
+Sets the userboard name to the specified vstring value. The maximum number of characters is 64.\
+`get userboard writeprotect`\
+Returns the state of the userboard write protect bit.\
+`set userboard writeprotect [true/false]`\
+Enables/disables the userboard write protect.\
+`get userboard init`\
+Checks if the userboard memory has been initialized.\
+`set userboard init `\
+Initializes the userboard memory when a non-initialized userboard is first connected to a readout.\
+`get userboard voltage `\
+Returns the high-voltage power supply voltage preset stored in the userboard.\
+`set userboard voltage {float: voltage}`\
+Sets the high-voltage power supply voltage preset stored in the userboard. A float number is expected.\
+`get userboard register [1/2] {hex byte: address}`\
+Returns the specified register preset of the selected FastIC+ from the userboard.\
+`set userboard register [1/2] {hex byte: address} {hex byte: value}`\
+Sets the specified register preset of the selected FastIC+ from the userboard.\
+`set userboard tomemory`\
+Copies the current FastIC+ configuration and high-voltage setpoint into the userboard memory.\
+`set userboard frommemory`\
+Loads the FastIC+ configuration and high-voltage setpoint from the userboard memory and applies it.\
 
 #### Vendor interface
 A second way to communicate with the device is via a binary vendor control transfer. This will be documented more in the future.
